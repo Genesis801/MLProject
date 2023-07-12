@@ -39,8 +39,8 @@ class DataTransformation:
 
             num_pipeline= Pipeline(
                 steps=[
-                ("imputer",SimpleImputer(strategy="median")),
-                ("scaler",StandardScaler())
+                ("imputer",SimpleImputer(strategy="median")),#done to check and replace missing values
+                ("scaler",StandardScaler())#used to standardize the data before applying any ML Model
 
                 ]
             )
