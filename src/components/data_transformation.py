@@ -49,7 +49,7 @@ class DataTransformation:
 
                 steps=[
                 ("imputer",SimpleImputer(strategy="most_frequent")),
-                ("one_hot_encoder",OneHotEncoder()),
+                ("one_hot_encoder",OneHotEncoder()),#used to encode object data into numeric format.
                 ("scaler",StandardScaler(with_mean=False))
                 ]
 
@@ -58,7 +58,7 @@ class DataTransformation:
             logging.info(f"Categorical columns: {categorical_columns}")
             logging.info(f"Numerical columns: {numerical_columns}")
 
-            preprocessor=ColumnTransformer(
+            preprocessor=ColumnTransformer( #This helps multiple columns to come into a single feature space. 
                 [
                 ("num_pipeline",num_pipeline,numerical_columns),
                 ("cat_pipelines",cat_pipeline,categorical_columns)
