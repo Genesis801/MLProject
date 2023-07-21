@@ -35,4 +35,17 @@ Then we tried to analyze the marks of a candidates based on their race/ethnicity
 ![image](https://github.com/Genesis801/MLProject/assets/44739430/d742ad66-7293-44f1-96a3-3dc5a5768f1a)
 
 
-Group E students have scored the highest marks. Group A students have scored the lowest marks. Students from a lower socioeconomic status have a lower avg in all course subjects
+Group E students have scored the highest marks. Group A students have scored the lowest marks. Students from a lower socioeconomic status have a lower avg in all course subjects.
+
+Once the Exploratory Data Analysis Part was completed and the had an insight on the data. The Prediction model was built using modular programming approach.
+
+<img width="960" alt="image" src="https://github.com/Genesis801/MLProject/assets/44739430/25d191fa-46f1-4398-b656-014da9fc2eea">
+
+The app was built on a FLASK Boilerplate. And the user had the privilege to insert data in an interactive way. Here the maths marks were used as a test for the marks prediction goal.
+
+<img width="960" alt="image" src="https://github.com/Genesis801/MLProject/assets/44739430/91122001-de03-4ae3-aa01-85cc76f1f430">
+
+After inserting the data in a customized fashion the above figure shows how the output came for the project. The model accuracy obtained for the prediction task was 96.73%.
+The entire Application was then deployed using AWS Elastic Beanstalk and a continuous Deployment pipeline was created using AWS Codepipeline.
+
+
